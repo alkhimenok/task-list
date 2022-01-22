@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 
-const Form = ({ blockClass }) => {
+const Form = ({ blockClass, onAddTask }) => {
 	const [task, setTask] = useState('')
 
 	const handleFormSubmit = e => {
-		const { target } = e
-		const { input } = target
-		const { value } = input
+		onAddTask(task)
 
 		setTask('')
 
