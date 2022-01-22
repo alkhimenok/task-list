@@ -1,4 +1,5 @@
 import Select from './components/Select/Select'
+import Form from './components/Form/Form'
 
 const App = () => {
 	return (
@@ -11,6 +12,12 @@ const App = () => {
 					</div>
 				</div>
 			</header>
+			<main className="main">
+				<div className="main__container --container">
+					<div className="main__body --body"></div>
+						<Form blockClass={'main__form'} />
+				</div>
+			</main>
 		</div>
 	)
 }
