@@ -2,6 +2,10 @@
 @import './styles/icons.css';
 /* icons ----- */
 
+/* ----- fonts */
+@import './styles/fonts.css';
+/* fonts ----- */
+
 /* ----- reset */
 @import 'reset-css';
 /* reset ----- */
