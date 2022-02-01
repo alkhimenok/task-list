@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform: translate(0, -10vh);
 }
 .form__item {
   position: relative;
@@ -38,10 +37,17 @@
   text-transform: capitalize;
   border: none;
   border-radius: var(--border-radius-superellipse);
+  background-color: var(--third-color);
   transition: var(--delay);
   cursor: pointer;
 }
-.form__btn:hover {
+@media screen and (hover: hover) {
+  .form__btn:hover {
+    color: var(--third-color);
+    background-color: var(--primary-color);
+  }
+}
+.form__btn:active {
   color: var(--third-color);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }

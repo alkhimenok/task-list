@@ -26,6 +26,10 @@
 @import './styles/components/form.css';
 /* form ----- */
 
+/* ----- list */
+@import './styles/components/list.css';
+/* list ----- */
+
 /* ----- main */
 @import './styles/components/main.css';
 /* main ----- */

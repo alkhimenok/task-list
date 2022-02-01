@@ -1,4 +1,13 @@
-.main {}
-.main__container {}
-.main__body {}
-.main__form {}
+/* .main {} */
+/* .main__container {} */
+.main__body {
+}
+@media screen and (min-width: 1001px) { /* var(--max-width) + 1px */
+  .main__body {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+.main__form {
+  transform: translate(0, -10vh);
+}

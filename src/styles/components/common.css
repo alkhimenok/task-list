@@ -28,12 +28,14 @@
 	justify-content: center;
 	width: var(--xxl-size);
 	height: var(--xxl-size);
-	border-radius: var(--border-radius-circle);
+	border-radius: var(--border-radius-superellipse);
 	transition: var(--delay);
 	cursor: pointer;
 }
-.switch:hover {
-	background-color: var(--primary-dark-color);
+@media screen and (hover: hover) {
+	.switch:hover {
+		background-color: var(--primary-dark-color);
+	}
 }
 .switch--active .switch__track {
 	background-color: var(--third-color);
