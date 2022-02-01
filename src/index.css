@@ -26,6 +26,10 @@
 @import './styles/components/form.css';
 /* form ----- */
 
+/* ----- task */
+@import './styles/components/task.css';
+/* task ----- */
+
 /* ----- list */
 @import './styles/components/list.css';
 /* list ----- */
