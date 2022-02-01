@@ -28,7 +28,7 @@
 	--thick-border: calc(var(--base-size) * 0.6) solid;
 
 	--delay: 0.2s;
-	--long-delay: 0.4s ease-in-out;
+	--long-delay: 0.8s ease-in-out;
 
 	--breakpoint-xs-min: 0px;
 	--breakpoint-xs-max: 576px;
