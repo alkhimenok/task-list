@@ -1,0 +1,45 @@
+.container {
+	max-width: calc(var(--max-width) + var(--sm-size) * 2);
+	margin: 0 auto;
+}
+.body {
+	padding: 0 var(--sm-size);
+}
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.switch {
+	position: relative;
+	width: var(--xxl-size);
+	height: var(--lg-size);
+	background-color: transparent;
+	cursor: pointer;
+}
+.switch--active .switch__track {
+	background-color: var(--third-color);
+}
+.switch--active .switch__thumb {
+	left: 50%;
+	background-color: var(--secondary-color);
+}
+.switch__track {
+	width: 100%;
+	height: 100%;
+	background-color: var(--primary-dark-color);
+	border-radius: var(--border-radius-superellipse);
+	transition: var(--delay);
+}
+.switch__thumb {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: var(--secondary-dark-color);
+	border-radius: var(--border-radius-superellipse);
+	transition: var(--delay);
+}

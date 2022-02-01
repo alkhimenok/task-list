@@ -23,7 +23,7 @@
 
 	--border-radius-circle: 50%;
 	--border-radius-oval: calc(var(--base-size) * 5);
-	--border-radius-superellipse: calc(var(--base-size) * 1);
+	--border-radius-superellipse: calc(var(--base-size) * 0.5);
 	--thin-border: calc(var(--base-size) * 0.2) solid;
 	--thick-border: calc(var(--base-size) * 0.6) solid;
 

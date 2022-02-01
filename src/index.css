@@ -1,10 +1,10 @@
-/* ----- icons */
-@import './styles/icons.css';
-/* icons ----- */
-
 /* ----- fonts */
 @import './styles/fonts.css';
 /* fonts ----- */
+
+/* ----- icons */
+@import './styles/icons.css';
+/* icons ----- */
 
 /* ----- variables */
 @import './styles/variables.css';
@@ -13,3 +13,11 @@
 /* ----- reset */
 @import './styles/reset.css';
 /* reset ----- */
+
+/* ----- common */
+@import './styles/components/common.css';
+/* common ----- */
+
+/* ----- header */
+@import './styles/components/header.css';
+/* header ----- */

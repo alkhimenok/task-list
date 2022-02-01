@@ -1,0 +1,9 @@
+.header {}
+.header__background {
+  display: none;
+}
+.header__img {}
+.header__container {}
+.header__body {}
+.header__title {}
+.header__switch {}
