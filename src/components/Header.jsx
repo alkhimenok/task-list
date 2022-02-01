@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import Container from './common/Container'
 import Body from './common/Body'
 import Image from './common/Image'
@@ -8,7 +8,7 @@ const Header = () => {
 	const [switchClassName, setSwitchClassName] = useState('header__switch')
 	const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0)
 
-	const backgroundSrcList = ['backgrounds/1.jpg', 'backgrounds/2.jpg', 'backgrounds/3.jpg']
+	const backgroundSrcList = useMemo(() => ['backgrounds/1.jpg', 'backgrounds/2.jpg', 'backgrounds/3.jpg'], [])
 
 	const handleSwitchClick = () => {
 		setSwitchClassName(prev => (prev.includes('switch--active') ? 'header__switch' : 'header__switch switch--active'))
@@ -25,7 +25,7 @@ const Header = () => {
 				return isNext ? prev + 1 : prev - 1
 			})
 		}, 10000)
-	}, [])
+	}, [backgroundSrcList])
 
 	return (
 		<header className="header">

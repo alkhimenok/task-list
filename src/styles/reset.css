@@ -2,22 +2,28 @@
 
 * {
 	box-sizing: border-box;
+	outline: none;
 }
 html,
-body {
+body,
+input,
+button {
 	font-family: var(--primary-font);
 	color: var(--primary-color);
 }
 @media screen and (min-width: 577px) {
 	html,
 	body,
-	input {
+	input,
+	button {
 		font-size: 10px;
 	}
 }
 @media screen and (max-width: 576px) {
 	html,
-	body {
+	body,
+	input,
+	button {
 		font-size: calc(0px + 10 * (100vw / 576));
 	}
 }

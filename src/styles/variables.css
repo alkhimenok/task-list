@@ -1,9 +1,9 @@
 :root {
-	--max-width: 1200px;
+	--max-width: 1000px;
 	--base-size: 1rem;
 	--xs-size: calc(var(--base-size) * 0.5);
 	--sm-size: calc(var(--base-size) * 1);
-	--md-size: calc(var(--base-size) * 1.5);
+	--md-size: calc(var(--base-size) * 2);
 	--lg-size: calc(var(--base-size) * 3);
 	--xl-size: calc(var(--base-size) * 4);
 	--xxl-size: calc(var(--base-size) * 6);
@@ -11,9 +11,9 @@
 	--primary-color: #a783e2;
 	--secondary-color: #4554b1;
 	--third-color: #ffffff;
-	--primary-dark-color: #f4f4f4;
+	--primary-dark-color: #cccccc;
 	--secondary-dark-color: #7a7e82;
-	--third-dark-color: #000000;
+	--third-dark-color: #c5c5c5;
 	--danger-color: #d04840;
 	--warning-color: #e3d464;
 	--success-color: #55adc3;
@@ -28,7 +28,7 @@
 	--thick-border: calc(var(--base-size) * 0.6) solid;
 
 	--delay: 0.2s;
-	--long-delay: 0.8s ease-in-out;
+	--long-delay: 1s ease-in-out;
 
 	--breakpoint-xs-min: 0px;
 	--breakpoint-xs-max: 576px;

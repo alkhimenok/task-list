@@ -21,3 +21,11 @@
 /* ----- header */
 @import './styles/components/header.css';
 /* header ----- */
+
+/* ----- form */
+@import './styles/components/form.css';
+/* form ----- */
+
+/* ----- main */
+@import './styles/components/main.css';
+/* main ----- */

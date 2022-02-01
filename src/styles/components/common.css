@@ -1,3 +1,13 @@
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.wrapper > * {
+	width: 100%;
+}
 .container {
 	max-width: calc(var(--max-width) + var(--sm-size) * 2);
 	margin: 0 auto;
@@ -13,11 +23,17 @@
 }
 
 .switch {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: var(--xxl-size);
-	height: var(--lg-size);
-	background-color: transparent;
+	height: var(--xxl-size);
+	border-radius: var(--border-radius-circle);
+	transition: var(--delay);
 	cursor: pointer;
+}
+.switch:hover {
+	background-color: var(--primary-dark-color);
 }
 .switch--active .switch__track {
 	background-color: var(--third-color);
@@ -27,8 +43,9 @@
 	background-color: var(--secondary-color);
 }
 .switch__track {
-	width: 100%;
-	height: 100%;
+	position: relative;
+	width: 80%;
+	height: 40%;
   background-color: var(--secondary-dark-color);
 	border-radius: var(--border-radius-superellipse);
 	transition: var(--delay);
@@ -36,10 +53,10 @@
 .switch__thumb {
   position: absolute;
 	left: 0;
-	top: 0;
+	top: -10%;
 	width: 50%;
-	height: 100%;
-  background-color: var(--primary-dark-color);
+	height: 120%;
+  background-color: var(--third-color);
 	border-radius: var(--border-radius-superellipse);
 	transition: var(--delay);
 }

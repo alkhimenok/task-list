@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	height: 30vh;
+	height: 40vh;
   overflow: hidden;
 	user-select: none;
 }
@@ -31,9 +31,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	transform: translate(0, -200%);
+	transform: translate(0, -20vh);
 }
 .header__title {
+	font-family: var(--secondary-font);
 	font-size: var(--xl-size);
 	text-transform: uppercase;
 	color: var(--third-color);
