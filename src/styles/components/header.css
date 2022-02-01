@@ -1,9 +1,35 @@
-.header {}
-.header__background {
-  display: none;
+.header {
+	height: 30vh;
 }
-.header__img {}
-.header__container {}
-.header__body {}
-.header__title {}
-.header__switch {}
+.header__background {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.header__background::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(45deg, rgba(69, 84, 177, 0.5) 0%, rgba(167, 131, 226, 1) 100%);
+}
+.header__img {
+	flex: 0 0 100%;
+}
+/* .header__container {} */
+.header__body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transform: translate(0, -200%);
+}
+.header__title {
+	font-size: var(--xl-size);
+	text-transform: uppercase;
+	color: var(--third-color);
+}
+/* .header__switch {} */

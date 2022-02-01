@@ -4,9 +4,9 @@
 	--xs-size: calc(var(--base-size) * 0.5);
 	--sm-size: calc(var(--base-size) * 1);
 	--md-size: calc(var(--base-size) * 1.5);
-	--lg-size: calc(var(--base-size) * 2);
-	--xl-size: calc(var(--base-size) * 3);
-	--xxl-size: calc(var(--base-size) * 5);
+	--lg-size: calc(var(--base-size) * 3);
+	--xl-size: calc(var(--base-size) * 4);
+	--xxl-size: calc(var(--base-size) * 6);
 
 	--primary-color: #a783e2;
 	--secondary-color: #4554b1;
