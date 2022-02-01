@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { CastomSelect, SelectTitle, SelectList, SelectOption } from './styled'
 
 const Select = ({ blockClass }) => {
 	const optionList = ['all', 'important', 'completed', 'unfulfilled']
@@ -9,18 +8,18 @@ const Select = ({ blockClass }) => {
 	const handleChangeCurrentOption = e => setCurrentOption(e.target.textContent)
 
 	return (
-		<CastomSelect className={[blockClass ?? '', 'select'].join(' ')}>
-			<SelectTitle className="select__current-option">{currentOption}</SelectTitle>
-			<SelectList className="select__list" onClick={handleChangeCurrentOption}>
+		<div className={[blockClass ?? '', 'select'].join(' ')}>
+			<h2 className="select__current-option">{currentOption}</h2>
+			<ul className="select__list" onClick={handleChangeCurrentOption}>
 				{optionList.map(option => (
-					<SelectOption
+					<li
 						className={currentOption === option ? 'select__option select__option--current-option' : 'select__option'}
 						key={option}>
 						{option}
-					</SelectOption>
+					</li>
 				))}
-			</SelectList>
-		</CastomSelect>
+			</ul>
+		</div>
 	)
 }
 
