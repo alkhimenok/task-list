@@ -1,0 +1,44 @@
+:root {
+	--max-width: 1200px;
+	--base-size: 1rem;
+	--xs-size: calc(var(--base-size) * 0.5);
+	--sm-size: calc(var(--base-size) * 1);
+	--md-size: calc(var(--base-size) * 1.5);
+	--lg-size: calc(var(--base-size) * 2);
+	--xl-size: calc(var(--base-size) * 3);
+	--xxl-size: calc(var(--base-size) * 5);
+
+	--primary-color: #a783e2;
+	--secondary-color: #4554b1;
+	--third-color: #ffffff;
+	--primary-dark-color: #f4f4f4;
+	--secondary-dark-color: #7a7e82;
+	--third-dark-color: #000000;
+	--danger-color: #d04840;
+	--warning-color: #e3d464;
+	--success-color: #55adc3;
+
+	--primary-font: 'latoRegular';
+	--secondary-font: 'latoBold';
+
+	--border-radius-circle: 50%;
+	--border-radius-oval: calc(var(--base-size) * 5);
+	--border-radius-superellipse: calc(var(--base-size) * 1);
+	--thin-border: calc(var(--base-size) * 0.2) solid;
+	--thick-border: calc(var(--base-size) * 0.6) solid;
+
+	--delay: 0.2s;
+	--long-delay: 0.4s ease-in-out;
+
+	--breakpoint-xs-min: 0px;
+	--breakpoint-xs-max: 576px;
+	--breakpoint-sm-min: calc(var(--breakpoint-xs-max) + 1); /* 577 */
+	--breakpoint-sm-max: 768px;
+	--breakpoint-md-min: calc(var(--breakpoint-sm-max) + 1); /* 769 */
+	--breakpoint-md-max: 992px;
+	--breakpoint-lg-min: calc(var(--breakpoint-md-max) + 1); /* 993 */
+	--breakpoint-lg-max: 1200px;
+	--breakpoint-xl-min: calc(var(--breakpoint-lg-max) + 1); /* 1201 */
+	--breakpoint-xl-max: 1400px;
+	--breakpoint-xxl-min: calc(var(--breakpoint-xl-max) + 1); /* 1401 */
+}

@@ -6,6 +6,10 @@
 @import './styles/fonts.css';
 /* fonts ----- */
 
+/* ----- variables */
+@import './styles/variables.css';
+/* variables ----- */
+
 /* ----- reset */
 @import './styles/reset.css';
 /* reset ----- */

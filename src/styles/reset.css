@@ -5,8 +5,8 @@
 }
 html,
 body {
-	font-family: 'latoRegular';
-	color: #7a7e82;
+	font-family: var(--primary-font);
+	color: var(--primary-color);
 }
 @media screen and (min-width: 577px) {
 	html,
