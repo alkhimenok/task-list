@@ -5,6 +5,11 @@
 	justify-content: flex-start;
 	flex-direction: column;
 }
+/* .header {} */
+.main {
+	flex: auto;
+}
+/* .footer {} */
 .wrapper > * {
 	width: 100%;
 }

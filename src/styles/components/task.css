@@ -2,10 +2,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 0 var(--sm-size) 0;
 	padding: var(--sm-size);
 	background-color: var(--secondary-color);
 	border-radius: var(--border-radius-superellipse);
+}
+.task.task--completed {
+	opacity: 0.5;
 }
 .task.task--completed .task__btn.icon-completed {
 	color: var(--third-color);
@@ -19,13 +21,12 @@
 	color: var(--third-color);
 	background-color: var(--danger-color);
 }
-/* .task.task--completed:last-child,
+/* .task.task--completed:last-child {
+	margin: 0 0 var(--xl-size) 0;
+}
 .task.task--important:last-child {
   margin: 0 0 var(--xl-size) 0;
 } */
-.task__item:last-child {
-	margin: 0 0 0 0 !important;
-}
 .task__text {
 	color: var(--third-color);
 	font-size: var(--md-size);

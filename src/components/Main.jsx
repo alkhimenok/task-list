@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Body from './common/Body'
 import Container from './common/Container'
 import Form from './Form'
 import List from './List'
 import { uid } from 'uid'
+import { setListHeight } from '../scripts/listHeight'
 
 const Main = () => {
 	const [taskList, setTaskList] = useState([])
@@ -20,21 +21,25 @@ const Main = () => {
 		const currentTarget = target.closest('li')
 
 		setTaskList(() => {
-			return taskList.map(task => {
-				if (currentTarget.id === task.id) task[dataset.btn] = !task[dataset.btn]
+			return taskList
+				.map(task => {
+					if (currentTarget.id === task.id) task[dataset.btn] = !task[dataset.btn]
 
-				return task
-			})
+					return task
+				})
+				.filter(task => !task.isDelete)
 		})
 
 		e.preventDefault()
 	}
 
-	// const taskAction = {
-	// 	completed: () => {},
-	// 	important: 'important',
-	// 	delete: 'delete'
-	// }
+	useEffect(() => {
+		setListHeight()
+
+		setTaskList(JSON.parse(localStorage.getItem('taskListData')) ?? [])
+	}, [])
+
+	window.addEventListener('beforeunload', () => localStorage.setItem('taskListData', JSON.stringify(taskList)))
 
 	return (
 		<main className="main">
