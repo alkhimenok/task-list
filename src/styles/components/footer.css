@@ -1,9 +1,8 @@
 .footer {
-	background: var(--primary-gradient);
+	background: var(--secondary-gradient);
 }
 /* .footer__container {} */
-.footer__body {
-}
+/* .footer__body {} */
 .footer__form {
 	padding: var(--sm-size) 0;
 	display: flex;

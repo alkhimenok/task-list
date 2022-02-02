@@ -3,6 +3,7 @@ import Body from './common/Body'
 import Container from './common/Container'
 import Form from './Form'
 import List from './List'
+import Footer from './Footer'
 import { uid } from 'uid'
 import { setListHeight } from '../scripts/listHeight'
 
@@ -33,6 +34,38 @@ const Main = () => {
 		e.preventDefault()
 	}
 
+	const handleFooterClick = e => {
+		e.preventDefault()
+
+		if (e.target.tagName !== 'BUTTON') return
+
+		const { target } = e
+		const { dataset } = target
+
+		setTaskList(actionAllTask[dataset.btn]().filter(task => !task.isDelete))
+	}
+
+	const actionAllTask = {
+		completed: () =>
+			taskList.map(task => {
+				task.isCompleted = true
+
+				return task
+			}),
+		important: () =>
+			taskList.map(task => {
+				task.isImportant = true
+
+				return task
+			}),
+		delete: () =>
+			taskList.map(task => {
+				task.isDelete = true
+
+				return task
+			})
+	}
+
 	useEffect(() => {
 		setListHeight()
 
@@ -49,6 +82,7 @@ const Main = () => {
 					<List parentBlockClass={'main__list'} taskList={taskList} handleClick={handleTaskAction} />
 				</Body>
 			</Container>
+			<Footer parentBlockClass={'main__footer'} handleClick={handleFooterClick} />
 		</main>
 	)
 }

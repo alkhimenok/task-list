@@ -1,7 +1,15 @@
-/* .main {} */
-/* .main__container {} */
-.main__body {
+.main {
+  flex: auto;
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
 }
+.main > * {
+	width: 100%;
+}
+/* .main__container {} */
+/* .main__body {} */
 @media screen and (min-width: 1001px) { /* var(--max-width) + 1px */
   .main__body {
     max-width: 70%;

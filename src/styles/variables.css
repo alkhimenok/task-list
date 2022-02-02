@@ -19,7 +19,7 @@
 	--success-color: #55c376;
 
 	--primary-gradient: linear-gradient(45deg, rgba(69, 84, 177, 0.5) 0%, rgba(167, 131, 226, 0.7) 100%);
-	--secondary-gradient: linear-gradient(45deg, rgba(69, 84, 177, 0.5) 0%, rgba(167, 131, 226, 0.7) 100%);
+	--secondary-gradient: linear-gradient(45deg, rgba(69, 84, 177, 1) 0%, rgba(167, 131, 226, 1) 100%);
 
 	--primary-font: 'latoRegular';
 	--secondary-font: 'latoBold';
