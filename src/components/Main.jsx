@@ -35,14 +35,14 @@ const Main = () => {
 	}
 
 	const handleFooterClick = e => {
-		e.preventDefault()
-
 		if (e.target.tagName !== 'BUTTON') return
 
 		const { target } = e
 		const { dataset } = target
 
 		setTaskList(actionAllTask[dataset.btn]().filter(task => !task.isDelete))
+
+		e.preventDefault()
 	}
 
 	const actionAllTask = {
@@ -79,7 +79,11 @@ const Main = () => {
 			<Container parentBlockClass={'main__container'}>
 				<Body parentBlockClass={'main__body'}>
 					<Form parentBlockClass={'main__form'} handleSubmit={handleTaskSubmit} />
-					<List parentBlockClass={'main__list'} taskList={taskList} handleClick={handleTaskAction} />
+					{taskList.length === 0 ? (
+						<h2 className='main__title'>All tasks have been completed so far</h2>
+					) : (
+						<List parentBlockClass={'main__list'} taskList={taskList} handleClick={handleTaskAction} />
+					)}
 				</Body>
 			</Container>
 			<Footer parentBlockClass={'main__footer'} handleClick={handleFooterClick} />

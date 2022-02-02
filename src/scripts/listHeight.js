@@ -4,6 +4,8 @@ export const setListHeight = () => {
 	const $form = document.querySelector('.form')
 	const $list = document.querySelector('.list')
 
+	if (!$list) return
+
 	$list.style.maxHeight = $main.clientHeight - $footer.clientHeight - $form.clientHeight * 2 + 'px'
 
 	window.addEventListener('resize', setListHeight)
