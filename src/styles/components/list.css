@@ -1,6 +1,5 @@
 .list {
-	/* max-height: 40vh; */
-	padding: 0 var(--sm-size);
+	padding: 0 var(--sm-size) 0 0;
 	overflow: auto;
 }
 .list::-webkit-scrollbar {

@@ -66,11 +66,8 @@ const Main = () => {
 			})
 	}
 
-	useEffect(() => {
-		setListHeight()
-
-		setTaskList(JSON.parse(localStorage.getItem('taskListData')) ?? [])
-	}, [])
+	useEffect(setListHeight, [taskList])
+	useEffect(() => setTaskList(JSON.parse(localStorage.getItem('taskListData')) ?? []), [])
 
 	window.addEventListener('beforeunload', () => localStorage.setItem('taskListData', JSON.stringify(taskList)))
 
