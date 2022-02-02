@@ -37,3 +37,7 @@
 /* ----- main */
 @import './styles/components/main.css';
 /* main ----- */
+
+/* ----- footer */
+@import './styles/components/footer.css';
+/* footer ----- */

@@ -1,0 +1,42 @@
+.footer {
+	background: var(--primary-gradient);
+}
+/* .footer__container {} */
+.footer__body {
+}
+.footer__form {
+	padding: var(--sm-size) 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer__btn {
+	margin: 0 var(--sm-size);
+	padding: var(--sm-size) var(--md-size);
+	font-family: var(--secondary-font);
+	font-size: var(--sm-size);
+	text-transform: capitalize;
+	color: var(--secondary-color);
+	background-color: var(--third-color);
+	border: none;
+	border-radius: var(--border-radius-superellipse);
+	transition: var(--delay);
+	cursor: pointer;
+}
+@media screen and (hover: hover) {
+	.footer__btn:hover {
+		color: var(--third-color);
+	}
+	.footer__btn:hover.footer__btn--completed {
+		background-color: var(--success-color);
+	}
+	.footer__btn:hover.footer__btn--important {
+		background-color: var(--warning-color);
+	}
+	.footer__btn:hover.footer__btn--delete {
+		background-color: var(--danger-color);
+	}
+}
+.footer__btn:active {
+	background-color: var(--secondary-color) !important;
+}

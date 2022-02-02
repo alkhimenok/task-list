@@ -43,14 +43,19 @@
 	transition: var(--delay);
 	cursor: pointer;
 }
-.task__btn:hover.icon-completed {
-	color: var(--success-color);
+@media screen and (hover: hover) {
+	.task__btn:hover.icon-completed {
+		color: var(--success-color);
+	}
+	.task__btn:hover.icon-important {
+		color: var(--warning-color);
+	}
+	.task__btn:hover.icon-delete {
+		color: var(--danger-color);
+	}
 }
-.task__btn:hover.icon-important {
-	color: var(--warning-color);
-}
-.task__btn:hover.icon-delete {
-	color: var(--danger-color);
+.task__btn:active {
+	color: var(--secondary-color) !important;
 }
 /* .list__icon.icon-completed {} */
 /* .list__icon.icon-important {} */
