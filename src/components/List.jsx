@@ -3,7 +3,7 @@ import Task from './Task'
 
 const List = ({ parentBlockClass, taskList, handleClick }) => {
 	return (
-		<ul className={[parentBlockClass, 'list'].join(' ')} onClick={handleClick}>
+		<ul className={[parentBlockClass, 'list'].join(' ')} id='listTask' onClick={handleClick}>
 			{[
 				...taskList.filter(task => task.isImportant && !task.isCompleted),
 				...taskList.filter(task => !task.isImportant && !task.isCompleted),

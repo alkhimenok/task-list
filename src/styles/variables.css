@@ -45,3 +45,18 @@
 	--breakpoint-xl-max: 1400px;
 	--breakpoint-xxl-min: calc(var(--breakpoint-xl-max) + 1); /* 1401 */
 }
+
+:root .black {
+	--primary-color: #f8f8f8;
+	--secondary-color: #342844;
+	--third-color: #9b9b9b;
+	--primary-dark-color: #cccccc;
+	--secondary-dark-color: #7a7e82;
+	--third-dark-color: #c5c5c5;
+	--danger-color: #d04840;
+	--warning-color: #fae731;
+	--success-color: #55c376;
+
+	--primary-gradient: linear-gradient(45deg, rgba(23, 28, 56, 0.5) 0%, rgba(42, 12, 90, 0.7) 100%);
+	--secondary-gradient: linear-gradient(45deg, rgb(39, 41, 56) 0%, rgb(49, 15, 104) 100%);
+}

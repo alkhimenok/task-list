@@ -12,6 +12,7 @@
   width: 100%;
   padding: var(--md-size) var(--sm-size);
   font-size: var(--md-size);
+  background-color: var(--third-color);
   border: none;
   border-radius: var(--border-radius-superellipse);
 }

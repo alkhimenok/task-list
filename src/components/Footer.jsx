@@ -3,7 +3,7 @@ import Body from './common/Body'
 
 const Footer = ({ parentBlockClass, handleClick }) => {
 	return (
-		<footer className={[parentBlockClass, 'footer'].join(' ')}>
+		<footer className={[parentBlockClass, 'footer'].join(' ')} id='footer'>
 			<Body parentBlockClass={'footer__body'}>
 				<form className="footer__form" onClick={handleClick}>
 					<button className="footer__btn footer__btn--completed" data-btn="completed">do everything</button>

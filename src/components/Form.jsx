@@ -6,13 +6,14 @@ const Form = ({ parentBlockClass, handleSubmit }) => {
 	return (
 		<form
 			className={[parentBlockClass, 'form'].join(' ')}
+			id="formTask"
 			onSubmit={e => {
 				if (task !== '') {
 					handleSubmit(task)
 					setTask('')
 				} else {
-          // showModal()
-        }
+					// showModal()
+				}
 
 				e.preventDefault()
 			}}>

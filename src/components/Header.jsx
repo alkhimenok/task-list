@@ -3,6 +3,7 @@ import Container from './common/Container'
 import Body from './common/Body'
 import Image from './common/Image'
 import Switch from './common/Switch'
+import { changeAppThem } from '../scripts/them'
 
 const Header = () => {
 	const [switchClassName, setSwitchClassName] = useState('header__switch')
@@ -11,7 +12,21 @@ const Header = () => {
 	const backgroundSrcList = useMemo(() => ['backgrounds/1.jpg', 'backgrounds/2.jpg', 'backgrounds/3.jpg'], [])
 
 	const handleSwitchClick = () => {
-		setSwitchClassName(prev => (prev.includes('switch--active') ? 'header__switch' : 'header__switch switch--active'))
+		setSwitchClassName(prev => {
+			let themName
+			let switchState
+
+			if (prev.includes('switch--active')) {
+				themName = 'white'
+				switchState = 'header__switch'
+			} else {
+				themName = 'black'
+				switchState = 'header__switch switch--active'
+			}
+
+			changeAppThem(themName)
+			return switchState
+		})
 	}
 
 	useEffect(() => {

@@ -68,18 +68,18 @@ const Main = () => {
 
 	useEffect(setListHeight, [taskList])
 	useEffect(() => setTaskList(JSON.parse(localStorage.getItem('taskListData')) ?? []), [])
-
+	
 	window.addEventListener('beforeunload', () => localStorage.setItem('taskListData', JSON.stringify(taskList)))
 
 	return (
-		<main className="main">
+		<main className="main" id='main'>
 			<Container parentBlockClass={'main__container'}>
 				<Body parentBlockClass={'main__body'}>
 					<Form parentBlockClass={'main__form'} handleSubmit={handleTaskSubmit} />
-					{taskList.length === 0 ? (
-						<h2 className='main__title'>All tasks have been completed so far</h2>
-					) : (
+					{taskList.length ? (
 						<List parentBlockClass={'main__list'} taskList={taskList} handleClick={handleTaskAction} />
+					) : (
+						<h2 className="main__title">All tasks have been completed so far</h2>
 					)}
 				</Body>
 			</Container>
